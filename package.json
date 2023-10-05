@@ -19,8 +19,14 @@
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
     "@prisma/client": "^5.3.1",
+    "@tailwindcss/forms": "^0.5.6",
+    "aws-sdk": "^2.1470.0",
     "bcrypt": "^5.1.1",
     "jsonwebtoken": "^9.0.2",
-    "prisma": "^5.3.1"
+    "jwt-decode": "^3.1.2",
+    "mock-aws-s3": "^4.0.2",
+    "nock": "^13.3.3",
+    "prisma": "^5.3.1",
+    "url-pattern": "^1.0.3"
   }
 }

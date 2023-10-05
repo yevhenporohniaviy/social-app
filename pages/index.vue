@@ -1,13 +1,15 @@
 <template>
   <div>
     <main-section title="Home" :loading="loading">
-      Content
+      {{ user  }}
     </main-section>
   </div>
 </template>
 
 <script setup>
-  const loading = ref(false)
+const loading = ref(false)
+const { useAuthUser } = useAuth()
+const user = useAuthUser()
 </script>
 
 <style lang="scss" scoped>
