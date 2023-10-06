@@ -1,11 +1,14 @@
 import UrlPattern from "url-pattern"
 import { sendError } from "h3"
 import { getUserById } from "~/server/db/users"
-import { decodeAccessToken } from '~/utils/jwt'
+import { decodeAccessToken } from '~/server/utils/jwt'
 
 
 export default defineEventHandler(async (event) => {
-  const endpoints = ['/api/auth/user']
+  const endpoints = [
+    '/api/auth/user',
+    '/api/user/tweets'
+  ]
 
   const isHandledByThisMiddleware = endpoints.some(enpoint => {
     const pattern = new UrlPattern(enpoint)

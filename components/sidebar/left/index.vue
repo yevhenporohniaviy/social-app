@@ -67,6 +67,21 @@ import { NuxtLink } from '#build/components';
         </template>
         <template v-slot:name> More </template>
       </SidebarLeftTab>
+
+      <div class="hidden xl:block">
+        <ui-button size="lg" liquid>
+          <strong>
+            Tweet
+          </strong>
+        </ui-button>
+      </div>
+      <div class="block xl:hidden">
+        <ui-button >
+          <div class="w-6 h-6 font-bold">
+            <PencilIcon />
+          </div>
+        </ui-button>
+      </div>
     </div>
   </div>
 </template>
@@ -74,6 +89,7 @@ import { NuxtLink } from '#build/components';
 <script setup>
 import { HomeIcon } from '@heroicons/vue/24/solid'
 import {
+  PencilIcon,
   HashtagIcon,
   BellIcon,
   InboxIcon,
