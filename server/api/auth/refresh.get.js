@@ -1,7 +1,7 @@
 import { sendError, parseCookies } from 'h3'
 import { getRefreshTokenByToken } from '~/server/db/refreshTokens'
 import { getUserById } from '~/server/db/users'
-import { decodeRefreshToken, generateTokens } from '~/utils/jwt'
+import { decodeRefreshToken, generateTokens } from '~/server/utils/jwt'
 
 export default defineEventHandler(async (event) => {
   const cookies = parseCookies(event)
