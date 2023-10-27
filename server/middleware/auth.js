@@ -7,7 +7,8 @@ import { decodeAccessToken } from '~/server/utils/jwt'
 export default defineEventHandler(async (event) => {
   const endpoints = [
     '/api/auth/user',
-    '/api/user/tweets'
+    '/api/user/tweets',
+    '/api/tweets'
   ]
 
   const isHandledByThisMiddleware = endpoints.some(enpoint => {
