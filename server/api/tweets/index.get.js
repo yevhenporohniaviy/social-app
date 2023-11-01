@@ -23,8 +23,6 @@ export default defineEventHandler( async (event) => {
       }
     ]
   });
-
-
   return {
     tweets: tweets.map(tweetTransformer)
   }
